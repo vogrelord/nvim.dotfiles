@@ -1,0 +1,7 @@
+{
+    "panic if error": {
+        "prefix": "iep",
+        "body": "if err!=nil { \n panic(err) \n}",
+        "description": "Panic if error"
+    }
+}

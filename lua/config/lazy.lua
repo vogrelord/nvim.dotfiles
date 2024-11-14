@@ -23,7 +23,8 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  -- install = { colorscheme = { "darkula", "tokyonight", "habamax" } },
+  install = { colorscheme = { "darkula" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
@@ -41,3 +42,7 @@ require("lazy").setup({
     },
   },
 })
+
+local options = { noremap = true }
+vim.keymap.set("i", "jk", "<Esc>", options)
+vim.keymap.set("i", "kj", "<Esc>", options)

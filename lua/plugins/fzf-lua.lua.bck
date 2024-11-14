@@ -1,0 +1,8 @@
+return {
+  "ibhagwan/fzf-lua",
+  opts = {
+    files = {
+      cmd = "git ls-files --modified --exclude-standard",
+    },
+  },
+}
